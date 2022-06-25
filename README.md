@@ -4,6 +4,7 @@ A web application that checks a list of metrics created the data fetched from a 
 
 ## live demo
 [loom video](https://www.loom.com/share/2ffaa5fca0fe46a0b029ea1a7623d5fd)
+[see it on netlify](https://remarkable-mousse-ceb2df.netlify.app/)
 ## Build with
 HTML
 CSS
