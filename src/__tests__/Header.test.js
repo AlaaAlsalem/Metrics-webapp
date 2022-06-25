@@ -12,5 +12,5 @@ describe('test for Header', () => {
       },
     );
     expect(screen.getByText('COVID19 statistics')).toBeInTheDocument();
-    });
+  });
 });
