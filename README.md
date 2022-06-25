@@ -2,7 +2,8 @@
 
 A web application that checks a list of metrics created the data fetched from a covid 19 API for countries in North America.This project applies HTML, CSS, and JavaScript best practices using React/Redux library and is fully responsive.
 
-
+## live demo
+[loom video](https://www.loom.com/share/2ffaa5fca0fe46a0b029ea1a7623d5fd)
 ## Build with
 HTML
 CSS
