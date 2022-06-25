@@ -17,7 +17,7 @@ const Details = () => {
     <>
       {
       state ? (
-  
+
         <div className="DetailContainer">
           <Header />
           <div className="CountryDetail">
@@ -46,7 +46,8 @@ const Details = () => {
         </div>
       ) : (
         <div>Loading</div>
-      )}
+      )
+}
     </>
   );
 };

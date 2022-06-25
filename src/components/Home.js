@@ -13,40 +13,40 @@ const HomePage = () => {
   });
   return (
     <>
-    <Header />
-    <div className="MainContainer">
-      <div className="Banner">
-        <img src={Banner} alt="COVID19" className="Container" />
-        <div className="BannerDiv">
-          <h2 className="BannerText">
-            North America
-            <br />
-            Countries
-          </h2>
+      <Header />
+      <div className="MainContainer">
+        <div className="Banner">
+          <img src={Banner} alt="COVID19" className="Container" />
+          <div className="BannerDiv">
+            <h2 className="BannerText">
+              North America
+              <br />
+              Countries
+            </h2>
+          </div>
         </div>
+        <input
+          className="Search"
+          placeholder="Search Country ..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <section className="CountryContainer">
+          {filteredCountries.map((item) => (
+            <Link
+              key={item.id}
+              to={`/country/${item.country}`}
+              className="Container"
+            >
+              <h2 className="Name">{item.country}</h2>
+              <h2 className="Critical">{item.critical}</h2>
+              <img src={item.countryFlag} alt="country flag" />
+              <h2>{item.id}</h2>
+            </Link>
+          ))}
+        </section>
       </div>
-      <input
-        className="Search"
-        placeholder="Search Country ..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-      <section className="CountryContainer">
-        {filteredCountries.map((item) => (
-          <Link
-            key={item.id}
-            to={`/country/${item.country}`}
-            className="Container"
-          >
-            <h2 className="Name">{item.country}</h2>
-            <h2 className="Critical">{item.critical}</h2>
-            <img src={item.countryFlag} alt="country flag" />
-            <h2>{item.id}</h2>
-          </Link>
-        ))}
-      </section>
-    </div>
-  </>
-);
+    </>
+  );
 };
 export default HomePage;
